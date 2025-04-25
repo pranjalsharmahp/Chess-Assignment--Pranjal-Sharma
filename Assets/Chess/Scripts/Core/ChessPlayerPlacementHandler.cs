@@ -7,6 +7,7 @@ namespace Chess.Scripts.Core {
 
         private void Start() {
             transform.position = ChessBoardPlacementHandler.Instance.GetTile(row, column).transform.position;
+            ChessBoardPlacementHandler.Instance._chessPiecePosition[row,column]=gameObject;
         }
     }
 }
